@@ -5,7 +5,7 @@ VellumDesk + Vellum Toolbox 的静态官网，部署在 GitHub Pages。
 - 线上：https://wooozxh.github.io/vellum-site/
 - 本地预览：在仓库根目录运行 `python -m http.server 8080`，打开 http://localhost:8080/
 - 结构：首页 / `desk/` / `toolbox/` / `updates/` / `download/`
-- 部署：push 到 `main`，GitHub Actions 自动发布（`.github/workflows/pages.yml`）
+- 部署：push 到 `main`，GitHub Pages 从 `main` 根目录构建（`.nojekyll`）
 
 更新版本时改这些地方：
 
