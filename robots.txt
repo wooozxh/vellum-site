@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wooozxh.github.io/vellum-site/sitemap.xml

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>更新记录 — VellumDesk / Vellum Toolbox</title>
+<meta name="description" content="VellumDesk 与 Vellum Toolbox 的版本更新记录：模板库、双视图、批量、素材库、新建稿、审核版导出等。">
+<meta name="theme-color" content="#05070d">
+<link rel="canonical" href="https://wooozxh.github.io/vellum-site/updates/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="更新记录 — VellumDesk / Vellum Toolbox">
+<meta property="og:description" content="两条产品线，各自迭代。Desk 按版本发；Toolbox 随插件包走。">
+<meta property="og:url" content="https://wooozxh.github.io/vellum-site/updates/">
+<meta property="og:image" content="https://wooozxh.github.io/vellum-site/assets/img/og.png">
+<link rel="icon" type="image/png" href="../assets/img/desk-icon.png">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/site-extra.css">
+</head>
+<body>
+<div class="grain"></div>
+<header id="siteHead">
+  <a class="brand" href="../index.html"><img src="../assets/img/desk-icon.png" alt="Vellum"><span>VELLUM</span><small>DESIGN&nbsp;SUITE</small></a>
+  <nav id="siteNav">
+    <a href="../desk/">VellumDesk</a>
+    <a href="../toolbox/">Vellum Toolbox</a>
+    <a href="../updates/">更新记录</a>
+    <a href="../download/">下载</a>
+  </nav>
+  <a class="nav-dl" href="../download/">下载<span class="dl-ver"> v1.11.0</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<main id="top">
+  <section class="page-hero" style="padding-bottom:56px">
+    <div class="wrap">
+      <p class="crumbs"><a href="../index.html">VELLUM</a> / RELEASE NOTES</p>
+      <p class="eyebrow"><b></b>RELEASE NOTES / 2026</p>
+      <h1>更新记录</h1>
+      <p class="lede">两条产品线，各自迭代。Desk 按版本发；Toolbox 随插件包走。<br>只写已经发生的事，不编日期。</p>
+    </div>
+  </section>
+
+  <section class="section" style="border-top:0;padding-top:24px">
+    <div class="wrap">
+      <div class="tabs reveal">
+        <button class="tab on" data-filter="all">ALL / 全部</button>
+        <button class="tab" data-filter="desk">VELLUMDESK</button>
+        <button class="tab" data-filter="toolbox">VELLUM TOOLBOX</button>
+      </div>
+
+      <div class="log reveal">
+        <div class="log-row" data-product="desk">
+          <div><div class="v">v1.11.0</div><div class="d">2026-10-17</div><div class="tag">WINDOWS · CURRENT</div></div>
+          <div><h4>PSD 模板库、双视图、勾选批量</h4>
+            <p>Desk 这一版把「找模板」和「批量干活」补齐。模板库只收 PSD / PSB，卡片直接显示尺寸、出血、色彩模式与参考线条数。</p>
+            <ul><li>PSD 模板库：≤20 MB、必须读到画布尺寸；被拒文件留在原盘。</li><li>卡片 / 列表双视图；列表支持全选、半选、Shift 连选。</li><li>批量移动 / 复制到任务 / 序号改名 / 清除记录 / 删除。</li><li>模板信息卡：512×512，参考线角标。</li></ul>
+          </div>
+        </div>
+
+        <div class="log-row" data-product="desk">
+          <div><div class="v">v1.10.0</div><div class="d">2026-10-11</div><div class="tag">WINDOWS</div></div>
+          <div><h4>PS 插件联动、通用素材库</h4>
+            <p>Desk 的素材开始流进 Photoshop。通用素材库与任务库共用一套多层树；镜像自动同步，插件侧能看到最新状态。</p>
+            <ul><li>写镜像 manifest / task / brand / thumb，预建 handoff。</li><li>通用素材库：多层分组、扫描认领、同步开关。</li><li>镜像「变更后自动重写」：节流 + 串行锁。</li></ul>
+          </div>
+        </div>
+
+        <div class="log-row" data-product="desk">
+          <div><div class="v">v1.9.7</div><div class="d">2026-10-10</div><div class="tag">WINDOWS</div></div>
+          <div><h4>占位封面、丢失角标修复</h4>
+            <p>无成品图的任务生成通用占位封面；卡片右上角「丢失」角标与编辑按钮不再重叠。</p>
+          </div>
+        </div>
+
+        <div class="log-row" data-product="toolbox">
+          <div><div class="v">v0.9.11–0.9.37</div><div class="d">CURRENT</div><div class="tag">PHOTOSHOP</div></div>
+          <div><h4>新建稿与 PSD 模板库</h4>
+            <p>插件开始能「按规范开稿」：从打好参考线的 PSD 模板新建，而不是置入。模板缩略图改成 512×512 信息卡。</p>
+            <ul><li>「新建稿」入口：模板网格 + 打开成新稿（handoff → app.open）。</li><li>按规范建稿：规范表 + presetJSON，含出血参考线。</li><li>模板缩略图按 512×512 信息卡正方形显示。</li><li>参考线坐标改百分比（PS 按百分比解释）。</li></ul>
+          </div>
+        </div>
+
+        <div class="log-row" data-product="toolbox">
+          <div><div class="v">v0.9.6–0.9.10</div><div class="d">SERIES</div><div class="tag">PHOTOSHOP</div></div>
+          <div><h4>素材库三段式与多层目录</h4>
+            <p>素材库重做成「目录固定上 / 网格唯一滚动 / 插入固定下」的三段式；多层目录兼容到 5 层，面包屑下钻。</p>
+            <ul><li>MAX_DEPTH 2→5，flattenBrand 真递归。</li><li>面包屑下钻 + 整行子目录（dirlib）。</li><li>插入面板瘦身：150px → 53px。</li></ul>
+          </div>
+        </div>
+
+        <div class="log-row" data-product="toolbox">
+          <div><div class="v">v0.9.0–0.9.5</div><div class="d">SERIES</div><div class="tag">PHOTOSHOP</div></div>
+          <div><h4>参数条改版 + CMYK 导出修复</h4>
+            <p>审核版导出的参数条重做；CMYK 稿导出改走副本 + changeMode(RGB)，原稿零改动。</p>
+            <ul><li>参数条底色改用填充矩形层。</li><li>取色换代：imaging.getPixels 使用 sourceBounds。</li><li>复制副本再转 RGB，绕开 PS 存 PNG 不支持 CMYK 的限制。</li></ul>
+          </div>
+        </div>
+
+        <div class="log-row" data-product="toolbox">
+          <div><div class="v">v0.8.0</div><div class="d">SERIES</div><div class="tag">PHOTOSHOP</div></div>
+          <div><h4>导出审核版 + 成品图</h4>
+            <p>审核版导出上线：带参数条导出成品图；大稿长边超过 4000 时等比缩放，并把比例印在参数条上。</p>
+            <ul><li>参数条：主题按底带平均亮度判定、竖线分隔、依据块右对齐带 logo。</li><li>大稿缩放比例写进参数条，避免「看起来是原尺寸」的误判。</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="log-note">Desk 版本号、日期来自 GitHub Release；Toolbox 版本段来自插件侧 changelog（上次提交停在 v0.7.0，0.8.0→0.9.37 四个版本段一次入库）。Toolbox 逐版日期待补。</p>
+      <p style="margin-top:28px"><a class="btn-ghost" href="../download/">前往下载 <span>→</span></a></p>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="wrap foot">
+    <div class="foot-brand"><img src="../assets/img/desk-icon.png" alt="">VELLUM <span style="color:#4d5c73">/ 本地优先的设计资产工作台</span></div>
+    <div class="foot-links"><a href="../desk/">VellumDesk</a><a href="../toolbox/">Vellum Toolbox</a><a href="../updates/">更新记录</a><a href="../download/">下载</a><a href="https://github.com/wooozxh/VellumDesk" target="_blank" rel="noopener">GitHub ↗</a></div>
+    <span class="copy">© 2026 VELLUM · DESIGNED FOR THE DESK</span>
+  </div>
+</footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
